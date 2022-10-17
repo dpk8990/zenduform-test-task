@@ -1,0 +1,60 @@
+<div class="comp">
+    <h2 class="heading">Submissions</h2>
+    <div class="sub-inp">
+        <form class="nosubmit">
+            <input class="nosubmit" type="search" placeholder="Search...">
+        </form>
+        <label class="dropdown">
+
+            <div class="dd-button">
+              Select Form
+            </div>
+          
+            <input type="checkbox" class="dd-input" id="test">
+          
+            <ul class="dd-menu">
+              <li>Form 1</li>
+              <li>Form 2</li>
+            </ul>
+            
+          </label>
+          <label class="dropdown">
+
+            <div class="dd-button">
+              Select Status
+            </div>
+          
+            <input type="checkbox" class="dd-input" id="test">
+          
+            <ul class="dd-menu">
+              <li>Status 1</li>
+              <li>Status 2</li>
+            </ul>
+            
+          </label>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-outline-primary" [ngClass]="toggleVal === 'map' ? 'active' : 'inactive'" (click)="toggleButton('map')">
+              <input type="radio" name="options" id="option1" autocomplete="off"> Map
+            </label>
+            <label class="btn btn-outline-primary" [ngClass]="toggleVal === 'list' ? 'active' : 'inactive'" (click)="toggleButton('list')">
+              <input type="radio" name="options" id="option2" autocomplete="off"> List
+            </label>
+          </div>
+          <div>
+            <button class="export-button"><i class="fa-solid fa-file-export"></i>Export</button>
+          </div>
+    </div>
+    <div class="submissions-data">
+        <div class="grid-container">
+            <div class="item1">
+                <div class="custom-card" *ngFor="let item of listData">
+                    <app-submissions-list [cardData]="item"></app-submissions-list>
+                </div>
+            </div>
+            <div class="item2">
+                <app-submissions-map></app-submissions-map>
+            </div>
+          </div>
+    </div>
+
+</div>

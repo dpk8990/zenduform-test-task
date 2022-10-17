@@ -1,0 +1,50 @@
+.lt {
+    color: pink;
+}
+
+.details {
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.date {
+    color: red;
+    font-weight: bold;
+}
+
+.workflow {
+    font-weight: bold;
+}
+
+.card-container {
+    border: 1px solid #d0c4c4;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 92%;
+    padding: 15px 0px 15px 10px;
+    text-align: left;
+}
+
+.status {
+    margin-left: 20px;
+    text-align: right;
+    background-color: rgba(255, 0, 0, 0.1);
+    padding: 5px 10px 5px 10px;
+    color: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    right: 0px;
+}
+
+.indicator {
+    height: 5px;
+    width: 5px;
+    background-color: red;
+    margin-right: 3px;
+    color: red;
+    font-size: 11px;
+    border-radius: 10px;
+}
